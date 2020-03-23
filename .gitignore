@@ -1,0 +1,6 @@
+# Object files
+*.so
+*.o
+*.exe
+cfg/*
+.vscode/*
