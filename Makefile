@@ -1,8 +1,8 @@
 
-# CC = arm-none-linux-gnueabi-gcc
-CC = gcc
+CC = arm-none-linux-gnueabi-gcc
+# CC = gcc
 
-LINK = -lpthread #-lrt -m32
+LINK = -lpthread  -m32 #-lrt -m32
 
 
 objects = main.o cJSON.o cfg.o util.o serial.o dcu.o tcpsrv.o

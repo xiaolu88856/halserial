@@ -52,7 +52,8 @@ void dcu_init(void)
 {
     int err = 0;
     int cnt = 0;
-    for(int i=0;i<MAX_SERIAL_NUM;i++)
+    int i = 0;
+    for(i=0;i<MAX_SERIAL_NUM;i++)
     {
         if(cfg_serial[i].enable)
         {
@@ -80,8 +81,9 @@ void dcu_init(void)
 void wait_for_dcu_done(void)
 {
     int cnt = 0;
+    int i=0;
 
-    for(int i=0;i<MAX_SERIAL_NUM;i++)
+    for(i=0;i<MAX_SERIAL_NUM;i++)
     {
         if(cfg_serial[i].enable)
         {
